@@ -4,4 +4,26 @@ nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classL
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){nav?.classList.remove('open');menuBtn?.setAttribute('aria-expanded','false')}});
 const range=document.getElementById('compareRange');const layer=document.querySelector('.before-layer');const handle=document.getElementById('compareHandle');
 function updateCompare(){const v=range.value;layer.style.width=v+'%';handle.style.left=v+'%'} range?.addEventListener('input',updateCompare);updateCompare();
-const form=document.getElementById('quoteForm');form?.addEventListener('submit',e=>{e.preventDefault();const service=document.getElementById('service').value,size=document.getElementById('size').value,area=document.getElementById('area').value;if(!service||!size||!area)return;const text=`Përshëndetje PrimeClean, dua të kërkoj një ofertë.%0A%0AShërbimi: ${service}%0ASipërfaqja: ${size}%0AZona: ${area}`;window.open(`https://wa.me/355683257956?text=${text}`,'_blank','noopener')});
+const form = document.getElementById('quoteForm');
+
+form?.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const service = document.getElementById('service').value;
+    const size = document.getElementById('size').value;
+    const area = document.getElementById('area').value;
+
+    if (!service || !size || !area) {
+        return;
+    }
+
+    const message =
+        `Përshëndetje PrimeClean, dua të kërkoj një ofertë.%0A%0A` +
+        `Shërbimi: ${service}%0A` +
+        `Sipërfaqja: ${size}%0A` +
+        `Zona: ${area}`;
+
+    const whatsappUrl = `https://wa.me/355683257956?text=${message}`;
+
+    window.open(whatsappUrl, '_blank');
+});
