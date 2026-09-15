@@ -1,29 +1,75 @@
-const menuBtn=document.getElementById('menuBtn');const nav=document.getElementById('nav');
-menuBtn?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.setAttribute('aria-label',open?'Mbyll menunë':'Hap menunë')});
-nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false')}));
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){nav?.classList.remove('open');menuBtn?.setAttribute('aria-expanded','false')}});
-const range=document.getElementById('compareRange');const layer=document.querySelector('.before-layer');const handle=document.getElementById('compareHandle');
-function updateCompare(){const v=range.value;layer.style.width=v+'%';handle.style.left=v+'%'} range?.addEventListener('input',updateCompare);updateCompare();
-const form = document.getElementById('quoteForm');
+document.addEventListener('DOMContentLoaded', () => {
 
-form?.addEventListener('submit', e => {
-    e.preventDefault();
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('nav');
 
-    const service = document.getElementById('service').value;
-    const size = document.getElementById('size').value;
-    const area = document.getElementById('area').value;
+    menuBtn?.addEventListener('click', () => {
+        const open = nav?.classList.toggle('open') ?? false;
 
-    if (!service || !size || !area) {
-        return;
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute(
+            'aria-label',
+            open ? 'Mbyll menunë' : 'Hap menunë'
+        );
+    });
+
+    nav?.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+            nav?.classList.remove('open');
+            menuBtn?.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+            nav?.classList.remove('open');
+            menuBtn?.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+
+    // BEFORE / AFTER
+    const range = document.getElementById('compareRange');
+    const layer = document.querySelector('.before-layer');
+    const handle = document.getElementById('compareHandle');
+
+    function updateCompare() {
+        if (!range || !layer || !handle) return;
+
+        const value = range.value;
+
+        layer.style.width = value + '%';
+        handle.style.left = value + '%';
     }
 
-    const message =
-        `Përshëndetje PrimeClean, dua të kërkoj një ofertë.%0A%0A` +
-        `Shërbimi: ${service}%0A` +
-        `Sipërfaqja: ${size}%0A` +
-        `Zona: ${area}`;
+    range?.addEventListener('input', updateCompare);
+    updateCompare();
 
-    const whatsappUrl = `https://wa.me/355683257956?text=${message}`;
 
-    window.open(whatsappUrl, '_blank');
+    // WHATSAPP FORM
+    const form = document.getElementById('quoteForm');
+
+    form?.addEventListener('submit', e => {
+        e.preventDefault();
+
+        const service = document.getElementById('service')?.value;
+        const size = document.getElementById('size')?.value;
+        const area = document.getElementById('area')?.value;
+
+        if (!service || !size || !area) {
+            return;
+        }
+
+        const text =
+            `Përshëndetje PrimeClean, dua të kërkoj një ofertë.\n\n` +
+            `Shërbimi: ${service}\n` +
+            `Sipërfaqja: ${size}\n` +
+            `Zona: ${area}`;
+
+        const whatsappUrl =
+            `https://wa.me/355683257956?text=${encodeURIComponent(text)}`;
+
+        window.location.href = whatsappUrl;
+    });
+
 });
