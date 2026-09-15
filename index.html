@@ -19,223 +19,95 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="site-header" id="top">
+  <div class="container nav-wrap">
+    <a class="brand" href="#top" aria-label="PrimeClean Albania">
+      <span class="brand-mark">PC</span>
+      <span><strong>PrimeClean</strong><small>ALBANIA · TIRANË</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Hap menunë" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav id="nav">
+      <a href="#sherbimet">Shërbimet</a>
+      <a href="#si-funksionon">Si funksionon</a>
+      <a href="#oferta">Kërko ofertë</a>
+      <a class="nav-call" href="tel:+355683257956">068 325 7956</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- Header / Navigimi -->
-    <header>
-        <div class="container nav-container">
-            <div class="logo">
-                <i class="fas fa-home logo-icon"></i>
-                <div class="logo-text">
-                    <h2>PRIME CLEAN</h2>
-                    <p class="location">ALBANIA</p>
-                </div>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#rreth-nesh">Pse Ne?</a></li>
-                    <li><a href="#cmimet">Çmimet</a></li>
-                    <li><a href="#paketat">Paketat</a></li>
-                    <li><a href="tel:0683257956" class="btn-cta-nav"><i class="fas fa-phone"></i> 068 325 7956</a></li>
-                </ul>
-                <div class="menu-toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-        </div>
-    </header>
+<main>
+<section class="hero">
+  <div class="hero-image"></div>
+  <div class="hero-shade"></div>
+  <div class="container hero-content">
+    <p class="eyebrow">PrimeClean · Tiranë</p>
+    <h1>Pastrim i kujdesshëm për <em>shtëpinë</em> dhe biznesin tuaj.</h1>
+    <p class="hero-copy">Standard, i thellë, pas punimeve. Apartamente, vila dhe zyra — me orar fleksibël dhe ofertë sipas ambientit.</p>
+    <div class="hero-actions">
+      <a class="btn btn-light" href="https://wa.me/355683257956?text=Përshëndetje%20PrimeClean,%20dua%20të%20kërkoj%20një%20ofertë." target="_blank" rel="noopener">Kërko ofertë në WhatsApp <span>↗</span></a>
+      <a class="text-link light-link" href="#sherbimet">Shiko shërbimet ↓</a>
+    </div>
+    <div class="hero-points"><span>✓ Ofertë sipas sipërfaqes</span><span>✓ Paketa mujore 2 ose 4 pastrime</span></div>
+  </div>
+</section>
 
-    <!-- Banner Kryesor (Hero Section) Modern -->
-    <section class="hero-premium">
-        <div class="container hero-content-v2">
-            <span class="hero-subtitle">Ambient të pastër, jetë më e mirë!</span>
-            <h1>Ne kujdesemi për<br><span class="highlight">hapësirën tuaj!</span></h1>
-            <p>Shërbime profesionale pastrimi me produkte të sigurta dhe orar fleksibël për shtëpinë dhe biznesin tuaj.</p>
-            <div class="hero-action-buttons">
-                <a href="#cmimet" class="btn btn-primary-v2">Shiko Çmimet <i class="fas fa-arrow-right"></i></a>
-                <a href="https://instagram.com/prime.clean.albania" target="_blank" class="btn btn-instagram-v2"><i class="fab fa-instagram"></i> Na Ndiqni</a>
-            </div>
-        </div>
-        <div class="hero-overlay"></div>
-    </section>
 
-    <!-- Pse të na zgjidhni (Features) me Ikonografi Moderne -->
-    <section id="rreth-nesh" class="features-v2">
-        <div class="container">
-            <div class="grid-4-v2">
-                <div class="feature-card-v2">
-                    <div class="icon-box"><i class="fas fa-user-shield"></i></div>
-                    <h3>Punë Profesionale</h3>
-                    <p>Ekip i trajnuar, diskret dhe plotësisht i besueshëm për çdo ambient.</p>
-                </div>
-                <div class="feature-card-v2">
-                    <div class="icon-box"><i class="fas fa-leaf"></i></div>
-                    <h3>Produkte të Sigurta</h3>
-                    <p>Përdorim vetëm detergjentë cilësorë, ekologjikë dhe të sigurt për shëndetin.</p>
-                </div>
-                <div class="feature-card-v2">
-                    <div class="icon-box"><i class="fas fa-calendar-alt"></i></div>
-                    <h3>Fleksibilitet</h3>
-                    <p>Përshtatemi plotësisht me axhendën tuaj, qoftë herët në mëngjes apo vonë.</p>
-                </div>
-                <div class="feature-card-v2">
-                    <div class="icon-box"><i class="fas fa-building"></i></div>
-                    <h3>Shtëpi & Biznese</h3>
-                    <p>Zgjidhje të dedikuara si për ambiente private ashtu edhe për ato komerciale.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="services section" id="sherbimet">
+  <div class="container">
+    <div class="section-intro"><p class="eyebrow dark">Çfarë bëjmë</p><h2>Shërbime të thjeshta.<br><em>Rezultat i pastër.</em></h2><p>Çmime të publikuara sipas sipërfaqes. Oferta përfundimtare përshtatet me gjendjen e ambientit.</p></div>
+    <div class="service-grid">
+      <article class="service-card"><div class="service-photo photo-home"></div><div class="service-body"><h3>Apartamente dhe shtëpi</h3><p>Pluhurat, dyshemetë, banjot, kuzhina. Edhe Airbnb.</p><strong>3.000 – 7.000 lekë</strong><a href="#oferta">Kërko ofertë →</a></div></article>
+      <article class="service-card"><div class="service-photo photo-office"></div><div class="service-body"><h3>Zyra dhe biznese</h3><p>Një herë ose me abonim, për ambiente të vogla dhe deri në 200 m².</p><strong>3.000 – 12.000 lekë</strong><a href="#oferta">Kërko ofertë →</a></div></article>
+      <article class="service-card"><div class="service-photo photo-post"></div><div class="service-body"><h3>Pas punimeve</h3><p>Beton, bojë dhe pluhur — gati për t’u banuar.</p><strong>Nga 500 lekë/m²</strong><a href="#oferta">Kërko ofertë →</a></div></article>
+      <article class="service-card plain-card"><div class="service-icon">✦</div><div class="service-body"><h3>Pastrim i thellë</h3><p>Kuzhinë, banjo, divan, dyshek dhe karrige.</p><strong>7.000 – 20.000 lekë</strong><a href="#oferta">Kërko ofertë →</a></div></article>
+      <article class="service-card plain-card"><div class="service-icon">◫</div><div class="service-body"><h3>Larje xhamash</h3><p>Dritare dhe vetrata, në banesa dhe zyra.</p><strong>Nga 500 lekë/m²</strong><a href="#oferta">Kërko ofertë →</a></div></article>
+      <article class="service-card plain-card"><div class="service-icon">↻</div><div class="service-body"><h3>Paketa mujore</h3><p>2 ose 4 pastrime në muaj. Ideale për klientët e rregullt.</p><strong>Nga 7.000 lekë/muaj</strong><a href="#paketat">Shiko paketat →</a></div></article>
+    </div>
+  </div>
+</section>
 
-    <!-- Tabela e Çmimeve e stiluar si Karta Moderniste -->
-    <section id="cmimet" class="pricing-v2">
-        <div class="container">
-            <h2 class="section-title-v2">Lista e Çmimeve tona Premium</h2>
-            <p class="section-subtitle-v2">Zgjidhni shërbimin që i përshtatet nevojave tuaja</p>
-            
-            <div class="pricing-cards-grid">
-                
-                <!-- Karta 1: Pastrim Standard -->
-                <div class="pricing-card-v2">
-                    <div class="card-header-v2">
-                        <i class="fas fa-broom card-icon"></i>
-                        <h3>PASTRIM STANDARD</h3>
-                        <p class="category">(Apartamente / Shtëpi)</p>
-                    </div>
-                    <ul class="price-list-v2">
-                        <li><span>Garsoniere / 1+1</span> <strong class="price-tag">3,000L – 4,000L</strong></li>
-                        <li><span>Apartament 2+1</span> <strong class="price-tag">4,000L – 5,500L</strong></li>
-                        <li><span>Apartament 3+1</span> <strong class="price-tag">5,500L – 7,000L</strong></li>
-                    </ul>
-                </div>
+<section class="how section" id="si-funksionon">
+  <div class="container">
+    <div class="section-intro"><p class="eyebrow dark">Si funksionon</p><h2>Tre hapa. <em>Pa komplikime.</em></h2></div>
+    <div class="steps">
+      <article><span>01</span><h3>Tregoni ambientin dhe sipërfaqen</h3><p>Apartament, vilë apo zyrë, dhe sa m² përafërsisht.</p></article>
+      <article><span>02</span><h3>Bini dakord për ofertën</h3><p>Sipas sipërfaqes dhe gjendjes së ambientit.</p></article>
+      <article><span>03</span><h3>Caktoni ditën dhe orarin</h3><p>Një herë, ose çdo javë me paketë mujore.</p></article>
+    </div>
+  </div>
+</section>
 
-                <!-- Karta 2: Zyra -->
-                <div class="pricing-card-v2">
-                    <div class="card-header-v2">
-                        <i class="fas fa-laptop-house card-icon"></i>
-                        <h3>ZYRA & BIZNESE</h3>
-                        <p class="category">(Ambiente Pune)</p>
-                    </div>
-                    <ul class="price-list-v2">
-                        <li><span>Zyrë e vogël</span> <strong class="price-tag">3,000L – 5,000L</strong></li>
-                        <li><span>Zyrë 50 – 100 m²</span> <strong class="price-tag">5,000L – 8,000L</strong></li>
-                        <li><span>Ambient 100-200 m²</span> <strong class="price-tag">8,000L – 12,000L</strong></li>
-                    </ul>
-                </div>
+<section class="packages section" id="paketat">
+  <div class="container">
+    <div class="section-intro light"><p class="eyebrow">Për klientët e rregullt</p><h2>Paketa <em>mujore</em></h2><p>Mbajeni ambientin gjithmonë në formë, me 2 ose 4 pastrime në muaj.</p></div>
+    <div class="package-grid">
+      <article><span class="package-number">2</span><h3>Pastrime / muaj</h3><p>1+1: <strong>7.000 lekë</strong></p><p>2+1: <strong>9.000 – 10.000 lekë</strong></p><p>3+1: <strong>12.000 – 14.000 lekë</strong></p></article>
+      <article class="featured-package"><span class="package-number">4</span><div class="tag">Më e zgjedhura</div><h3>Pastrime / muaj</h3><p>1+1: <strong>12.000 – 13.000 lekë</strong></p><p>2+1: <strong>16.000 – 18.000 lekë</strong></p><p>3+1: <strong>20.000 – 24.000 lekë</strong></p></article>
+    </div>
+  </div>
+</section>
 
-                <!-- Karta 3: Pastrim i Thellë -->
-                <div class="pricing-card-v2 featured-card">
-                    <div class="popular-tag">Më i Kërkuari</div>
-                    <div class="card-header-v2">
-                        <i class="fas fa-magic card-icon"></i>
-                        <h3>PASTRIM I THELLË</h3>
-                        <p class="category">(Detajuar & Me Shkëlqim)</p>
-                    </div>
-                    <ul class="price-list-v2">
-                        <li><span>Apartament 1+1</span> <strong class="price-tag gold">7,000L – 10,000L</strong></li>
-                        <li><span>Apartament 2+1</span> <strong class="price-tag gold">10,000L – 15,000L</strong></li>
-                        <li><span>Apartament 3+1</span> <strong class="price-tag gold">15,000L – 20,000L</strong></li>
-                    </ul>
-                </div>
+<section class="quote section" id="oferta">
+  <div class="container quote-layout">
+    <div class="section-intro"><p class="eyebrow dark">Kërko një ofertë</p><h2>Na trego ambientin.<br><em>Ne bëjmë pjesën tjetër.</em></h2><p>Zgjidh shërbimin, sipërfaqen dhe zonën. WhatsApp hapet me kërkesën tënde të përgatitur.</p></div>
+    <form id="quoteForm" class="quote-form">
+      <label>Shërbimi<select id="service" required><option value="">Zgjidh shërbimin</option><option>Apartament / shtëpi</option><option>Zyrë / biznes</option><option>Pas punimeve</option><option>Pastrim i thellë</option><option>Larje xhamash</option><option>Paketa mujore</option></select></label>
+      <label>Sipërfaqja e përafërt<select id="size" required><option value="">Zgjidh sipërfaqen</option><option>Deri në 50 m²</option><option>50 – 100 m²</option><option>100 – 200 m²</option><option>Mbi 200 m²</option></select></label>
+      <label>Zona<select id="area" required><option value="">Zgjidh zonën</option><option>Tiranë</option><option>Kamëz</option><option>Farkë</option><option>Astir / Yzberisht</option><option>Tjetër</option></select></label>
+      <button class="btn btn-green" type="submit">Shfaq përmbledhjen në WhatsApp ↗</button>
+      <p class="form-note">Faqja nuk ruan të dhënat. Butoni hap WhatsApp me tekstin e kërkesës.</p>
+    </form>
+  </div>
+</section>
 
-                <!-- Karta 4: Shërbime Shtesë -->
-                <div class="pricing-card-v2">
-                    <div class="card-header-v2">
-                        <i class="fas fa-plus-circle card-icon"></i>
-                        <h3>SHËRBIME SHTESË</h3>
-                        <p class="category">(Specifike & Me Metrazh)</p>
-                    </div>
-                    <ul class="price-list-v2 additional-services">
-                        <li>Pas ndërtimit/rikonstruksionit <strong>nga 500 L/m²</strong></li>
-                        <li>Larje xhamash <strong>nga 500 L/m²</strong></li>
-                        <li>Pastrim i thellë kuzhine <strong>3,000L – 5,000L</strong></li>
-                        <li>Pastrim i thellë banjoje <strong>2,000L – 3,500L</strong></li>
-                        <li>Pastrim divani <strong>nga 1,500 L</strong></li>
-                        <li>Pastrim dysheku <strong>nga 1,500 L</strong></li>
-                        <li>Pastrim karrigesh <strong>nga 300 L/copë</strong></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="info-note-v2">
-                <i class="fas fa-info-circle"></i>
-                <p>Çmimi përfundimtar përcaktohet pas inspektimit, sipas sipërfaqes dhe gjendjes së ambientit.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Paketa Mujore me dizajn Premium -->
-    <section id="paketat" class="packages-v2">
-        <div class="container">
-            <h2 class="section-title-v2 light">📅 Paketa Mujore <small>(Për klientët e rregullt)</small></h2>
-            <div class="packages-grid-v2">
-                
-                <div class="package-box-v2">
-                    <div class="package-header">
-                        <div class="package-icon">2</div>
-                        <h4>Pastrime / Muaj</h4>
-                    </div>
-                    <div class="package-body">
-                        <p>1+1: <strong>7,000 lekë</strong></p>
-                        <p>2+1: <strong>9,000 – 10,000 lekë</strong></p>
-                        <p>3+1: <strong>12,000 – 14,000 lekë</strong></p>
-                    </div>
-                </div>
-
-                <div class="package-box-v2 featured-package">
-                    <div class="package-header">
-                        <div class="package-icon gold-bg">4</div>
-                        <h4>Pastrime / Muaj</h4>
-                    </div>
-                    <div class="package-body">
-                        <p>1+1: <strong>12,000 – 13,000 lekë</strong></p>
-                        <p>2+1: <strong class="gold-text">16,000 – 18,000 lekë</strong></p>
-                        <p>3+1: <strong class="gold-text">20,000 – 24,000 lekë</strong></p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Seksioni i Kontaktit me Butona të Mëdhenj Aksioni (CTA) -->
-    <section id="kontakt" class="contact-v2">
-        <div class="container text-center-v2">
-            <h2>Gati për një ambient <span class="highlight-gold">që shkëlqen?</span></h2>
-            <p>Na kontaktoni sot për të rezervuar orarin tuaj ose për një konsultë falas.</p>
-            
-            <div class="cta-buttons-container-v2">
-                <a href="tel:0683257956" class="cta-btn-v2 call-btn-v2">
-                    <i class="fas fa-phone-alt"></i>
-                    <div class="cta-text">
-                        <span>Telefono Tani</span>
-                        <strong>068 325 7956</strong>
-                    </div>
-                </a>
-                
-                <a href="https://instagram.com/prime.clean.albania" target="_blank" class="cta-btn-v2 instagram-btn-v2">
-                    <i class="fab fa-instagram"></i>
-                    <div class="cta-text">
-                        <span>Na Ndiqni në</span>
-                        <strong>Instagram</strong>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Modern -->
-    <footer>
-        <div class="container footer-content-v2">
-            <div class="footer-logo">
-                <h3>PRIME CLEAN <span>ALBANIA</span></h3>
-            </div>
-            <p>&copy; 2026 Prime Clean Albania. Të gjitha të drejtat të rezervuara.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<section class="contact section">
+  <div class="container contact-box">
+    <div><p class="eyebrow dark">Kontakt</p><h2>Gati për një ambient që <em>shkëlqen?</em></h2><p>Mario Mema · Themelues / Menaxher</p></div>
+    <div class="contact-actions"><a href="https://wa.me/355683257956" target="_blank" rel="noopener">WhatsApp <strong>068 325 7956</strong></a><a href="tel:+355683257956">Telefon <strong>068 325 7956</strong></a><a href="https://instagram.com/prime.clean.albania" target="_blank" rel="noopener">Instagram <strong>@prime.clean.albania</strong></a></div>
+  </div>
+</section>
+</main>
+<footer><div class="container footer-wrap"><strong>PrimeClean Albania</strong><span>© 2026 · Kompani pastrimi · Tiranë</span></div></footer>
+<script src="script.js"></script>
 </body>
 </html>
